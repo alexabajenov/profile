@@ -1,17 +1,17 @@
 <template>
   <header :class="$style.header">
     <nav :class="$style.navigation">
-      <Swicth />
+      <SwicthButton />
     </nav>
   </header>
 </template>
 
 <script>
-import Swicth from '~/components/Switch/Switch.vue'
+import SwicthButton from '~/components/Switch/Switch.vue'
 export default ({
   name: "Navigation",
   components: {
-    Swicth,
+    SwicthButton,
   }
 })
 </script>
@@ -19,9 +19,14 @@ export default ({
 
 <style module lang="scss">
 .header{
+  position: sticky;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   padding: var(--content-vertical-spacing) var(--content-horizontal-spacing);
+  background-image: var(--header-gradient);
+  z-index: 10;
 }
 .navigation {
   width: 100%;

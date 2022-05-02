@@ -1,23 +1,22 @@
 <template>
-  <section :class="$style.section">
-    <div :class="$style.container">Hello</div>
-  </section>
+  <div>
+    <UserSection />
+    <AboutSection />
+  </div>
 </template>
 
 <script>
+import UserSection from "~/components/Sections/UserSection.vue"
+import AboutSection from "~/components/Sections/AboutSection.vue"
 export default {
   name: 'ProfilePage',
+  components: {
+    UserSection,
+    AboutSection,
+  }
 }
 </script>
 
 <style module lang="scss">
-  .section {
-    padding: 0 var(--content-horizontal-spacing);
-    width: 100%;
-    .container {
-      width: 100%;
-      max-width: var(--max-content-width);
-       margin: 0 auto;
-    }
-  }
+ 
 </style>

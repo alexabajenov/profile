@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navigation />
-    <main>
+    <main :class="$style.main">
       <Nuxt />
     </main>
     <footer></footer>
@@ -17,6 +17,8 @@ export default {
 }
 </script>
 
-<style module>
-
+<style module lang="scss">
+  .main {
+    position: relative;
+  }
 </style>

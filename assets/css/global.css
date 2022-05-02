@@ -3,9 +3,10 @@
 html, body {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
-html, body, main, header, section, footer, main, p, h1, h2, h3, h4, ul, li, img {
+html, body, main, header, nav, section, footer, main, p, h1, h2, h3, h4, ul, li, img, div {
   display: block;
   box-sizing: border-box;
   margin: 0;
@@ -56,4 +57,7 @@ html {
   --spacing-4xl: 40px;
   --spacing-5xl: 44px;
   --spacing-6xl: 48px;
+
+  --box-shadow: 0 0 10px #745c147a;
+  --header-gradient: linear-gradient(0, #FFFFFF00 5%, #FFFFFF 35%, #FFFFFF 60%);
 }
