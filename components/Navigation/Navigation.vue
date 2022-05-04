@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import SwicthButton from '~/components/Switch/Switch.vue'
+import SwicthButton from '~/components/SwicthButton/SwicthButton.vue'
 export default ({
   name: "Navigation",
   components: {

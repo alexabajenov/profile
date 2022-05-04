@@ -41,6 +41,10 @@ export default {
         .title, .user {
           margin-bottom: var(--spacing-5xl);
         }
+        .user {
+          font-family: 'Montserrat Alternates', 'sans-serif';
+          font-size: var(--text-xl);
+        }
         .info {
           color: var(--second-text-color);
           font-size: var(--text-l);
