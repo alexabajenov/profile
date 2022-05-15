@@ -37,7 +37,9 @@ export default ({
 
 <style module lang="scss">
 .container {
+  max-width: var(--max-content-width);
   padding: 60px var(--content-horizontal-spacing);
+  margin: 0 auto;
   .text {
     position: relative;
     top: -1rem;

@@ -36,6 +36,8 @@ export default ({
 
 <style module lang="scss">
 .container {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
   .topWave {
     width: 100%;
     height: 100px;

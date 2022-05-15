@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <div :class="$style.container">
       <div :class="$style.topImageContainer">
         <div :class="$style.textContainer">
@@ -22,7 +22,7 @@
       </div>
     </div>
     <div :class="$style.footerImage"></div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -46,6 +46,7 @@ export default {
   margin: 0 auto;
   background-color: var(--layout-color-1);
   padding-bottom: 1rem;
+  max-width: var(--max-content-width);
   .topImageContainer {
     position: relative;
     top: -2px;
@@ -92,13 +93,15 @@ export default {
     padding: 0 var(--content-horizontal-spacing);
     .aboutWrapper {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: minmax(200px, 242px) auto minmax(200px, 350px);
+      justify-items: center;
       gap: 40px;
       align-items: center;
       max-width: var(--max-content-width);
       .imageWrapper {
         border-radius: 48px;
         background-color: var(--layout-color-2);
+        max-width: 350px;
         img {
           position: relative;
           left: -16px;
@@ -114,11 +117,16 @@ export default {
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding: 0 3.1rem;
+        padding: 0 1rem;
+        max-width: 250px;
         img {
           width: 100%;
           height: auto;
         }
+      }
+      @media (max-width: 991px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
       }
     }
   }
@@ -126,10 +134,12 @@ export default {
 .footerImage {
   width: 100%;
   height: 160px;
+  max-width: var(--max-content-width);
   background-image: url('~/assets/img/back-bottom.png');
   background-position: top;
   background-size: cover;
   position: relative;
   top: -2px;
+  margin: 0 auto;
 }
 </style>
