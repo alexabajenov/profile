@@ -73,6 +73,7 @@ export default ({
       flex-direction: column;
       gap: var(--spacing-2xl);
       justify-content: center;
+      align-items: center;
     }
   }
 }

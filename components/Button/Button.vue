@@ -30,6 +30,7 @@ export default ({
     color: var(--white);
     cursor: pointer;
     transition: .3s;
+    white-space: nowrap;
     &:hover {
       box-shadow: var(--box-shadow);
     }
