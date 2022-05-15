@@ -13,6 +13,10 @@ html, body, main, header, nav, section, footer, main, p, h1, h2, h3, h4, ul, li,
   padding: 0;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Montserrat Alternates'
+}
+
 *,
 *::before,
 *::after {
