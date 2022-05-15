@@ -35,8 +35,21 @@ export default ({
       color: var(--omit-text-color);
     }
     .text {
+      position: relative;
+      display: flex;
+      width: 100%;
+      align-items: center;
       padding-left: var(--spacing-2xl);
-      border-left: 3px solid var(--layout-color-2);
+      height: 100%;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: var(--layout-color-2);
+      }
     }
   }
 }

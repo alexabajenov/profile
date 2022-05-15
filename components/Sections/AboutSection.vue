@@ -56,7 +56,7 @@ export default {
     height: 240px;
     width: 100%;
     padding: 0 var(--content-horizontal-spacing);
-    margin-bottom: var(--spacing-xxl);
+    margin-bottom: var(--spacing-6xl);
     .textContainer {
       display: flex;
       flex-direction: column;
