@@ -71,3 +71,9 @@ html {
   --box-shadow: 0 0 10px #745c147a;
   --header-gradient: linear-gradient(0, #FFFFFF00 5%, #FFFFFF 35%, #FFFFFF 60%);
 }
+
+@media (max-width: 575px) {
+  :root {
+    --content-horizontal-spacing: 30px;
+  }
+}

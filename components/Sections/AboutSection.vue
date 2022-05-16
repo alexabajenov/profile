@@ -99,14 +99,14 @@ export default {
       align-items: center;
       max-width: var(--max-content-width);
       .imageWrapper {
-        border-radius: 48px;
+        border-radius: 16px;
         background-color: var(--layout-color-2);
         max-width: 350px;
         img {
           position: relative;
           left: -16px;
           top: 16px;
-          border-radius: 48px;
+          border-radius: 16px;
           overflow: hidden;
           width: 100%;
           height: auto;

@@ -10,7 +10,6 @@
 </template>
 
 <script>
-
 export default ({
   props: {
     title: {
@@ -39,6 +38,8 @@ export default ({
     border: 1px solid var(--second-text-color);
     padding: 43px 33px;
     overflow: hidden;
+    background-color: var(--white);
+    box-shadow: 0 0 20px 5px #80808054;
     .imageContainer {
       width: 100%;
       position: relative;
