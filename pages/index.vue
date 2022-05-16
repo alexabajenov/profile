@@ -5,6 +5,7 @@
     <Advantages />
     <Experience />
     <Projects />
+    <Footer />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import AboutSection from "~/components/Sections/AboutSection.vue"
 import Advantages from "~/components/Sections/Advantages.vue"
 import Experience from "~/components/Sections/Experience.vue"
 import Projects from "~/components/Sections/Projects.vue"
+import Footer from "~/components/Sections/Footer.vue"
 
 export default {
   name: 'ProfilePage',
@@ -23,6 +25,7 @@ export default {
     Advantages,
     Experience,
     Projects,
+    Footer,
   }
 }
 </script>

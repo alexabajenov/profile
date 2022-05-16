@@ -59,6 +59,7 @@ export default ({
       align-items: center;
       width: 100%;
       justify-content: center;
+      margin-bottom: 115px;
       .imageContainer, 
       .imageBottomContainer  {
         display: flex;
