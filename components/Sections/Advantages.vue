@@ -5,7 +5,7 @@
     <div :class="$style.cardsContainer">
       <template v-for="item in list">
         <AdvantageCard 
-          :image="require(`~/assets/img/${item.img}`)" 
+          :image="item.image" 
           :title="item.title"
           :text="item.text"
           :key="item.title"
@@ -24,10 +24,10 @@ export default ({
   data() {
     return {
       list: [
-        { img: "creative.svg", title: "Creativity", text: "Сreative projects are the main part of my work"},
-        { img: "arrow-1.svg", title: "Quality", text: "My work is always done qualitatively"},
-        { img: "speed.svg", title: "Rapidity", text: "I do my job quickly and correctly"},
-        { img: "sociable.svg", title: "Sociable", text: "I am very sociable and will find a common language with everyone"},
+        { image: "creative.svg", title: "Creativity", text: "Сreative projects are the main part of my work"},
+        { image: "arrow-main.svg", title: "Quality", text: "My work is always done qualitatively"},
+        { image: "speed.svg", title: "Rapidity", text: "I do my job quickly and correctly"},
+        { image: "sociable.svg", title: "Sociable", text: "I am very sociable and will find a common language with everyone"},
       ]
     }
   }

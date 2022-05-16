@@ -3,7 +3,7 @@
     <div :class="$style.cardContainer">
       <p>{{ title }}</p>
       <div :class="$style.imgContainer">
-        <img :src="image" alt="creative" :class="$style.image">
+        <img :src="require(`~/assets/img/${image}`)" alt="creative" :class="$style.image">
       </div>
     </div>
     <p>{{ text }}</p>
