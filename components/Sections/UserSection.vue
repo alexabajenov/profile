@@ -6,9 +6,11 @@
         <h1 :class="$style.user">I’m<br>Alexandra Bajenova</h1>
         <p :class="$style.info">I am a web designer</p>
         <p :class="$style.description">I will make your websites modern , creative and adaptive for all devices</p>
-        <Button text="contact me" @btn-click="clickHandler">
-          <img src="~/assets/img/arrow.svg" alt="arrow">
-        </Button>
+        <div :class="$style.buttonContainer">
+          <Button text="contact me" @btn-click="clickHandler">
+            <img src="~/assets/img/arrow.svg" alt="arrow">
+          </Button>
+        </div>
       </div>
       <div :class="$style.imageContainer">
         <img src="~/assets/img/header-image.png" alt="main-image">
@@ -61,6 +63,9 @@ export default {
         .description {
           max-width: 320px;
           margin-bottom: var(--spacing-5xl);
+        }
+        .buttonContainer {
+          margin-bottom: var(--spacing-s);
         }
       }
       .imageContainer {

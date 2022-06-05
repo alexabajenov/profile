@@ -2,7 +2,9 @@
   <footer :class="$style.footer">
     <div :class="$style.container">
       <div :class="$style.header">
-        <h2>Contact <span>me</span></h2>
+        <div :class="$style.titleContainer">
+          <h2>Contact <span>me</span></h2>
+        </div>
         <div :class="$style.imageContainer">
           <img src="~/assets/img/cuate.png" alt="cuate">
         </div>
@@ -75,15 +77,30 @@ export default ({
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     .header {
       display: flex;
       justify-content: space-between;
       width: 100%;
-      > h2 {
-        font-size: var(--text-xl);
-        white-space: nowrap;
-        span {
-          color: var(--second-text-color);
+      .titleContainer {
+        > h2 {
+          position: relative;
+          font-size: var(--text-xl);
+          font-family: 'Montserrat';
+          font-weight: 500;
+          white-space: nowrap;
+          span {
+            color: var(--second-text-color);
+          }
+          &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: -0.5rem;
+            width: 3rem;
+            height: 3px;
+            background-color: var(--second-text-color);
+          }
         }
       }
       .imageContainer {
@@ -92,6 +109,10 @@ export default ({
           width: 100%;
           height: auto;
         }
+      }
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: var(--spacing-xxl);
       }
     }
     .emailComtainer {
@@ -115,6 +136,11 @@ export default ({
           color: var(--second-text-color);
         }
       }
+      @media (max-width: 767px) {
+        flex-direction: column;
+        justify-content: center;
+        gap: var(--spacing-xxl);
+      }
     }
     .footerInfo {
       display: grid;
@@ -136,7 +162,7 @@ export default ({
             align-items: center;
             font-size: var(--text-s);
             margin-bottom: var(--spacing-xs);
-            
+            line-height: 1.4;
             .icon {
               display: inline-block;
               width: 24px;
@@ -156,6 +182,12 @@ export default ({
           }
         } 
       }
+      @media (max-width: 991px) {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 991px) {
+      padding: 50px var(--content-horizontal-mobile-spacing) 32px var(--content-horizontal-mobile-spacing);
     }
   }
 }

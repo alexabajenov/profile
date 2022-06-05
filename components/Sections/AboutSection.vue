@@ -100,7 +100,7 @@ export default {
       max-width: var(--max-content-width);
       .imageWrapper {
         border-radius: 16px;
-        background-color: var(--layout-color-3);
+        background-color: var(--layout-color-4);
         /* box-shadow: var(--box-shadow); */
         max-width: 350px;
         img {

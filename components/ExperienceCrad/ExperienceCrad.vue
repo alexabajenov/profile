@@ -34,7 +34,7 @@ export default ({
     justify-content: center;
     border-radius: 50%;
     border: 1px solid var(--second-text-color);
-    padding: 33px;
+    padding: 53px;
     overflow: hidden;
     background-color: var(--white);
     box-shadow: 0 0 20px 5px #80808054;
@@ -64,7 +64,6 @@ export default ({
   }
   @media (max-width: 575px) {
     max-width: 260px;
-    width: 100%;
   }
 }
 .container:nth-child(even) > .cardContainer {

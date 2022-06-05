@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.container">
     <div v-for="(item, index) in data" :key="index" :class="$style.card">
-      <div :class="$style.digit">{{ index + 1 }}</div>
+      <div :class="$style.digit">0{{ index + 1 }}</div>
       <div :class="$style.text">{{ item }}</div>
     </div>
   </div>
@@ -24,32 +24,24 @@ export default ({
   width: 100%;
   display: grid;
   grid-template-rows: auto;
-  gap: var(--spacing-m);
+  gap: var(--spacing-xxl);
   .card {
-    display: grid;
-    grid-template-columns: 2.5rem auto;
-    align-items: center;
-    width: 100%;
+    border-left: 3px solid var(--layout-color-2);
+    position: relative;
     .digit {
-      font-size: var(--text-xl);
+      position: absolute;
+      left: -0.65em;
+      top: -1.45em;
+      font-size: var(--text-s);
       color: var(--omit-text-color);
+      transform: rotate(-90deg);
     }
     .text {
-      position: relative;
       display: flex;
       width: 100%;
       align-items: center;
       padding-left: var(--spacing-2xl);
       height: 100%;
-      &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 3px;
-        background-color: var(--layout-color-2);
-      }
     }
   }
 }
