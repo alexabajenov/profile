@@ -16,7 +16,7 @@
             <img src="~/assets/img/arrow-snake.png" alt="arrow-img" />
           </div>
           <div :class="$style.imageWrapper">
-            <img src="~/assets/img/my-photo.jpg" alt="about-image" />
+            <img src="~/assets/img/my-photo-1.jpg" alt="about-image" />
           </div>
         </div>
       </div>
@@ -100,7 +100,8 @@ export default {
       max-width: var(--max-content-width);
       .imageWrapper {
         border-radius: 16px;
-        background-color: var(--layout-color-2);
+        background-color: var(--layout-color-3);
+        /* box-shadow: var(--box-shadow); */
         max-width: 350px;
         img {
           position: relative;

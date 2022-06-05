@@ -26,8 +26,6 @@ export default ({
 
 <style module lang="scss">
 .container {
-  min-width: 150px;
-  width: 220px;
   .cardContainer {
     position: relative;
     display: flex;
@@ -36,12 +34,13 @@ export default ({
     justify-content: center;
     border-radius: 50%;
     border: 1px solid var(--second-text-color);
-    padding: 43px 33px;
+    padding: 33px;
     overflow: hidden;
     background-color: var(--white);
     box-shadow: 0 0 20px 5px #80808054;
     .imageContainer {
-      width: 100%;
+      width: 100px;
+      height: 100px;
       position: relative;
       top: 1rem;
       > img {

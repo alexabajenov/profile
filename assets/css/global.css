@@ -7,7 +7,7 @@ html, body {
   overflow-x: hidden;
 }
 
-html, body, main, header, nav, section, footer, main, p, h1, h2, h3, h4, ul, li, img, div {
+html, body, main, header, nav, section, footer, main, p, h1, h2, h3, h4, ul, li, img, div, ul, li {
   display: block;
   margin: 0;
   padding: 0;
@@ -25,6 +25,7 @@ h1, h2, h3, h4 {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 html {
@@ -33,16 +34,22 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 :root {
   --main-text-color: #000000;
   --second-text-color: #9215DF;
   --omit-text-color: #BBBBBB;
   --layout-color-1: #FAF2FF;
   --layout-color-2: #FCB834;
+  --layout-color-3: #80abf33b;
   --white: #FFFFFF;
   --black: #000000;
   --gray: #CCCCCC;
 
+  --text-s: 16px;
   --text-m: 20px;
   --text-l: 26px;
   --text-xl: 48px;
@@ -68,8 +75,9 @@ html {
   --spacing-5xl: 44px;
   --spacing-6xl: 48px;
 
-  --box-shadow: 0 0 10px #745c147a;
+  --box-shadow: 0 0 10px #1456747a;
   --header-gradient: linear-gradient(0, #FFFFFF00 5%, #FFFFFF 35%, #FFFFFF 60%);
+  --border-radius-2: 42px;
 }
 
 @media (max-width: 575px) {
