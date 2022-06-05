@@ -1,5 +1,5 @@
 <template>
-  <button :class="$style.button">
+  <button :class="$style.button" @click="clickHandler">
     <span>{{ text }}</span>
     <span><slot /></span>
   </button>
@@ -13,6 +13,11 @@ export default ({
       requred: true,
     }
   },
+  methods: {
+    clickHandler() {
+      this.$emit("btn-click");
+    }
+  }
 })
 </script>
 

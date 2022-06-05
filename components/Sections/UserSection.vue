@@ -6,7 +6,7 @@
         <h1 :class="$style.user">I’m<br>Alexandra Bajenova</h1>
         <p :class="$style.info">I am a web designer</p>
         <p :class="$style.description">I will make your websites modern , creative and adaptive for all devices</p>
-        <Button text="contact me">
+        <Button text="contact me" @btn-click="clickHandler">
           <img src="~/assets/img/arrow.svg" alt="arrow">
         </Button>
       </div>
@@ -23,6 +23,12 @@ export default {
   name: 'UserSection',
   components: {
     Button,
+  },
+  methods: {
+    clickHandler() {
+      const infoItem = document.getElementById("infoRef");
+      infoItem.scrollIntoView({ behavior: "smooth", block: "end" });
+    }
   }
 }
 </script>

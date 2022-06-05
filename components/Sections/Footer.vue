@@ -11,8 +11,8 @@
         <h3>Say Hello!</h3>
         <a href="mailto:alexandra.bajenova1@gmail.com">alexandra.bajenova1@gmail.com</a>
       </div>
-      <div :class="$style.footerInfo">
-        <div :class="$style.infoItem">
+      <div :class="$style.footerInfo" id="infoRef">
+        <div :class="$style.infoItem" >
           <ul>
             <li>Let’s talk</li>
             <li>
