@@ -84,6 +84,10 @@ export default ({
             height: auto;
           }
         }
+        @media (max-width: 767px) {
+          flex-direction: column;
+          justify-content: center;
+        }
       }
     }
   }
